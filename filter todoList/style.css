@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+.container{
+    display: flex;
+    height: 400px;
+    justify-content: center;
+   
+}
+.box{
+    padding-top: 10px;
+    border: 2px solid #a43ab7;
+    width: 300px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    position: relative;
+    color: #fff;
+    background: #3c1238;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+ul li{
+display: flex;
+justify-content: space-between;
+list-style: none;
+margin: 10px;
+}
+.text{
+margin-right: 20px;
+word-break: break-all;
+width: 90%;
+}
+.delete{
+    cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.788);
+    width: 20px;
+    height: 20px;
+    background-color:#e03737;
+    border-radius: 50%;
+}
+.delete:hover{
+background-color: red;
+}
+input[type="text"]{
+     border:none;
+     outline: none;
+     background: transparent; 
+     border-bottom:1px solid #fff; 
+     color: #fff;
+}
+#FormAdd{
+    position:absolute;
+    bottom: 0;
+}
+#FormAdd button{
+    border: none;
+    outline: none;
+    background-color: #a43ab7;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.filtered{
+    display: none !important;
+}
