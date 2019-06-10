@@ -1,0 +1,36 @@
+// callbacks & foreach
+
+// const myFunc = (callbackFunc) => {
+//     //do something
+//     let value = 50;
+//     callbackFunc(value);
+// };
+// myFunc(value =>{
+//     //do something
+//     console.log(value);
+// });
+
+let people = ['mario','luigi','ryu','shaun','chun-li'];
+
+const logName = (person,index) =>{
+    console.log(`${index} - hello ${person}`);
+};
+
+people.forEach(logName);
+
+
+//get a reference to the 'ul'
+const ul = document.querySelector('.people');
+
+const people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+
+let html = ``;
+
+people.forEach(function(person){
+    //create html template
+    html += `<li style="color: purple">${person}</li>`;
+});
+
+console.log(html);
+ul.innerHTML = html;
+   
