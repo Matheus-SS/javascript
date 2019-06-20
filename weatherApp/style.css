@@ -1,0 +1,40 @@
+body{
+    min-height: 100%;
+    background: #efebed;
+}
+.wrapper{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    width: 400px;
+    color: #fff;
+    background: #003875;
+    border: 2px solid black;
+    box-shadow: 1px 2px 9px 3px #000;
+}
+input[type="text"]{
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #fff; 
+    color:#fff;
+    font-weight:300;
+    font-size: 15px;
+}
+.image{
+    width: 100%;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 30px
+}
+h2,h4,span{
+    text-transform: uppercase;
+    margin: 10px;
+}
+span{
+    font-size: 30px;
+}
