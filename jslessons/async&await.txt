@@ -1,0 +1,21 @@
+const getTodos = async () =>{
+
+  const response = await fetch('luigis.json');
+
+  if(response.status !== 200){
+    //lança um erro no response da URL
+    throw new Error('cannot fecth the data');
+  }
+
+
+  const data = await response.json();
+
+  return data;
+};
+
+ getTodos()
+    .then(data=>console.log(data))
+    .catch(err=> console.log(err.message));
+  
+
+

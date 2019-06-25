@@ -26,15 +26,8 @@ border: none;
 border-bottom: 1px solid black; 
 outline: none;
 }
-.box .adicionar{
-    margin-top:15px;  
-    background: #e0e0e0;
-    border: none;
-    cursor: pointer;
-    height: 25px;
-    border-radius: 5px;
-    outline: none;
-
+form{
+    text-align: center;
 }
  ul{
      height: 300px;
