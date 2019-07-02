@@ -1,0 +1,28 @@
+ul li {
+    list-style: none;
+}
+
+i {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    transition: 1s;
+    transform: rotate(-225deg);
+}
+.spin{
+    transform: rotate(0deg);
+}
+.close{
+    opacity: 1;
+}
+.card-body {
+    height: auto;
+    transition: 1s;
+}
+
+.hide{
+    overflow: hidden;
+    opacity: 0;
+    padding: 0;
+    height: 0;
+}

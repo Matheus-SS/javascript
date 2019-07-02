@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript PopUp</title>
+</head>
+
+<body>
+
+<div class="container">
+        <h3 class="h3 mt-4 mb-3">Leave your comment</h3>
+    <form>
+        <div class="form-group col-sm-6 col-md-8">
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" class="form-control" required>
+        </div>
+        <div class="form-group col-sm-6 col-md-8">
+            <label for="title">Título:</label>
+            <input type="text" name="title" id="title" class="form-control" required>
+        </div>
+        <div class="form-group col-sm-6 col-md-8">
+            <label for="comment">Comentário:</label>
+            <textarea class="form-control" name="comment" id="comment" rows="5" required></textarea>
+        </div>
+        <div class="d-flex justify-content-center">
+            <input type="submit" value="Send your comment" class="btn btn-primary">
+        </div>
+        
+    </form>
+</div>
+
+<hr>
+
+<div class="container">
+        <h3 class="h3">Comments</h3>
+    <ul>
+    </ul>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC4P7aQbk4jVjbkohvpuHc4s45fMyjY1fo",
+    authDomain: "todolist-ca3ee.firebaseapp.com",
+    databaseURL: "https://todolist-ca3ee.firebaseio.com",
+    projectId: "todolist-ca3ee",
+    storageBucket: "todolist-ca3ee.appspot.com",
+    messagingSenderId: "901250561250",
+    appId: "1:901250561250:web:a3e6330f91c1b18d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
+<script src="script/popup.js"></script>
+
+</body>
+
+</html>
